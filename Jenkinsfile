@@ -4,8 +4,8 @@ standardBuild {
     release_branch   = "master"
     artifact_pattern = "*.txt"
     html_pattern     = [keepAll: true, reportDir: '.', reportFiles: 'output.html', reportName: 'Output Report']
-    dev_repo         = "jenkinsworld-demo-dev"
-    prod_repo        = "jenkinsworld-demo-prod"
+    dev_repo         = "jam-dev"
+    prod_repo        = "jam-prod"
     pr_script = """
        make build-rpm DOCKER_TAG=pipeline-demo-pr:latest BUILD_SCRIPT=pr_script.sh
     """
